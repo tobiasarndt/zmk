@@ -1,0 +1,144 @@
+menu "acpica (/home/tobias/keyboards/zmk/modules/lib/acpica)"
+osource "$(ZEPHYR_ACPICA_KCONFIG)"
+config ZEPHYR_ACPICA_MODULE
+	bool
+	default y
+endmenu
+menu "canopennode (/home/tobias/keyboards/zmk/modules/lib/canopennode)"
+osource "$(ZEPHYR_CANOPENNODE_KCONFIG)"
+config ZEPHYR_CANOPENNODE_MODULE
+	bool
+	default y
+endmenu
+menu "cmsis (/home/tobias/keyboards/zmk/modules/hal/cmsis)"
+osource "$(ZEPHYR_CMSIS_KCONFIG)"
+config ZEPHYR_CMSIS_MODULE
+	bool
+	default y
+endmenu
+menu "cmsis-dsp (/home/tobias/keyboards/zmk/modules/lib/cmsis-dsp)"
+osource "$(ZEPHYR_CMSIS_DSP_KCONFIG)"
+config ZEPHYR_CMSIS_DSP_MODULE
+	bool
+	default y
+endmenu
+menu "cmsis-nn (/home/tobias/keyboards/zmk/modules/lib/cmsis-nn)"
+osource "$(ZEPHYR_CMSIS_NN_KCONFIG)"
+config ZEPHYR_CMSIS_NN_MODULE
+	bool
+	default y
+endmenu
+menu "fatfs (/home/tobias/keyboards/zmk/modules/fs/fatfs)"
+osource "$(ZEPHYR_FATFS_KCONFIG)"
+config ZEPHYR_FATFS_MODULE
+	bool
+	default y
+endmenu
+menu "hal_ambiq (/home/tobias/keyboards/zmk/modules/hal/ambiq)"
+osource "$(ZEPHYR_HAL_AMBIQ_KCONFIG)"
+config ZEPHYR_HAL_AMBIQ_MODULE
+	bool
+	default y
+endmenu
+menu "hal_espressif (/home/tobias/keyboards/zmk/modules/hal/espressif)"
+osource "/home/tobias/keyboards/zmk/modules/hal/espressif/zephyr/Kconfig"
+config ZEPHYR_HAL_ESPRESSIF_MODULE
+	bool
+	default y
+endmenu
+menu "hal_ethos_u (/home/tobias/keyboards/zmk/modules/hal/ethos_u)"
+osource "$(ZEPHYR_HAL_ETHOS_U_KCONFIG)"
+config ZEPHYR_HAL_ETHOS_U_MODULE
+	bool
+	default y
+endmenu
+menu "hal_gigadevice (/home/tobias/keyboards/zmk/modules/hal/gigadevice)"
+osource "$(ZEPHYR_HAL_GIGADEVICE_KCONFIG)"
+config ZEPHYR_HAL_GIGADEVICE_MODULE
+	bool
+	default y
+endmenu
+menu "hal_nordic (/home/tobias/keyboards/zmk/modules/hal/nordic)"
+osource "$(ZEPHYR_HAL_NORDIC_KCONFIG)"
+config ZEPHYR_HAL_NORDIC_MODULE
+	bool
+	default y
+endmenu
+menu "hal_rpi_pico (/home/tobias/keyboards/zmk/modules/hal/rpi_pico)"
+osource "$(ZEPHYR_HAL_RPI_PICO_KCONFIG)"
+config ZEPHYR_HAL_RPI_PICO_MODULE
+	bool
+	default y
+endmenu
+menu "hal_telink (/home/tobias/keyboards/zmk/modules/hal/telink)"
+osource "/home/tobias/keyboards/zmk/modules/hal/telink/Kconfig"
+config ZEPHYR_HAL_TELINK_MODULE
+	bool
+	default y
+endmenu
+menu "liblc3 (/home/tobias/keyboards/zmk/modules/lib/liblc3)"
+osource "$(ZEPHYR_LIBLC3_KCONFIG)"
+config ZEPHYR_LIBLC3_MODULE
+	bool
+	default y
+endmenu
+menu "littlefs (/home/tobias/keyboards/zmk/modules/fs/littlefs)"
+osource "$(ZEPHYR_LITTLEFS_KCONFIG)"
+config ZEPHYR_LITTLEFS_MODULE
+	bool
+	default y
+endmenu
+menu "lvgl (/home/tobias/keyboards/zmk/modules/lib/gui/lvgl)"
+osource "/home/tobias/keyboards/zmk/modules/lib/gui/lvgl/Kconfig"
+config ZEPHYR_LVGL_MODULE
+	bool
+	default y
+endmenu
+menu "mbedtls (/home/tobias/keyboards/zmk/modules/crypto/mbedtls)"
+osource "$(ZEPHYR_MBEDTLS_KCONFIG)"
+config ZEPHYR_MBEDTLS_MODULE
+	bool
+	default y
+endmenu
+menu "percepio (/home/tobias/keyboards/zmk/modules/debug/percepio)"
+osource "/home/tobias/keyboards/zmk/modules/debug/percepio/zephyr/Kconfig"
+config ZEPHYR_PERCEPIO_MODULE
+	bool
+	default y
+endmenu
+menu "picolibc (/home/tobias/keyboards/zmk/modules/lib/picolibc)"
+osource "/home/tobias/keyboards/zmk/modules/lib/picolibc/zephyr/Kconfig"
+config ZEPHYR_PICOLIBC_MODULE
+	bool
+	default y
+endmenu
+menu "segger (/home/tobias/keyboards/zmk/modules/debug/segger)"
+osource "$(ZEPHYR_SEGGER_KCONFIG)"
+config ZEPHYR_SEGGER_MODULE
+	bool
+	default y
+endmenu
+menu "trusted-firmware-a (/home/tobias/keyboards/zmk/modules/tee/tf-a/trusted-firmware-a)"
+osource "$(ZEPHYR_TRUSTED_FIRMWARE_A_KCONFIG)"
+config ZEPHYR_TRUSTED_FIRMWARE_A_MODULE
+	bool
+	default y
+endmenu
+menu "uoscore-uedhoc (/home/tobias/keyboards/zmk/modules/lib/uoscore-uedhoc)"
+osource "$(ZEPHYR_UOSCORE_UEDHOC_KCONFIG)"
+config ZEPHYR_UOSCORE_UEDHOC_MODULE
+	bool
+	default y
+endmenu
+menu "zcbor (/home/tobias/keyboards/zmk/modules/lib/zcbor)"
+osource "$(ZEPHYR_ZCBOR_KCONFIG)"
+config ZEPHYR_ZCBOR_MODULE
+	bool
+	default y
+endmenu
+menu "module (/home/tobias/keyboards/zmk/app/module)"
+osource "/home/tobias/keyboards/zmk/app/module/Kconfig"
+config ZEPHYR_MODULE_MODULE
+	bool
+	default y
+endmenu

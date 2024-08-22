@@ -71,6 +71,7 @@ void activity_work_handler(struct k_work *work) {
 #if IS_ENABLED(CONFIG_ZMK_SLEEP)
     if (inactive_time > MAX_SLEEP_MS && !is_usb_power_present()) {
         // Put devices in suspend power mode before sleeping
+        LOG_ERR("SET STATE SLEEP");
         set_state(ZMK_ACTIVITY_SLEEP);
 
         if (zmk_pm_suspend_devices() < 0) {
